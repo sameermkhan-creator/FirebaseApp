@@ -27,6 +27,8 @@ class Router {
         val intent = LoginActivity.createIntent(activity)
         activity.startActivity(intent)
     }
+
+
     fun startPhoneLogin(activity: Activity)
     {
         val intent = PhoneLoginActivity.createIntent(activity)
@@ -35,6 +37,7 @@ class Router {
         activity.startActivity(intent)
 
     }
+
 
     fun startLoginScreen2(activity: Activity) {
         val intent = EmailActivity.createIntent(activity)

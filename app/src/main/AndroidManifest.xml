@@ -8,6 +8,8 @@
     <uses-permission android:name="android.permission.INTERNET"/>
 
 
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -15,6 +17,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FirebaseApp">
+
+
+        <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-1911400553432297~4415979898"/>
+
+
+
 
 
         <meta-data android:name="com.facebook.sdk.ApplicationId"

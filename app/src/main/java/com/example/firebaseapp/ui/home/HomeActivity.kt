@@ -17,10 +17,13 @@ import com.example.firebaseapp.firebase.realTimeDatabase.RealtimeDatabaseManager
 import com.example.firebaseapp.model.Post
 import com.example.firebaseapp.ui.login.LoginActivity
 import com.example.firebaseapp.utils.DateUtils
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.AdView
+import com.google.android.gms.ads.MobileAds
 import kotlinx.android.synthetic.main.activity_home.*
 
 class HomeActivity : AppCompatActivity() {
-
+    lateinit var mAdView : AdView
     private val authenticationManager by lazy { AuthenticationManager() }
 
     private val realtimeDatabaseManager by lazy { RealtimeDatabaseManager() }
@@ -35,6 +38,13 @@ class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
+
+        MobileAds.initialize(this) {}
+        mAdView = findViewById(R.id.adView)
+        val adRequest = AdRequest.Builder().build()
+        mAdView.loadAd(adRequest)
+
+
         initialize()
     }
 
