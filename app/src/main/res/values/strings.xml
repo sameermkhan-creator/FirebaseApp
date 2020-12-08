@@ -21,4 +21,9 @@
     <string name="facebook_app_id">852459568902917</string>
     <string name="fb_login_protocol_scheme">fb852459568902917</string>
     <string name="enter_your_phone_number">Enter Number</string>
+    <string name="password">XXXXXX</string>
+    <string name="dont_have_account">You do not have an account</string>
+    <string name="email">noemail@email.ca</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
 </resources>

@@ -36,6 +36,8 @@
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
+        <activity android:name=".ui.EmailLogin.SignupActivity"/>
+        <activity android:name=".ui.EmailLogin.EmailActivity"/>
         <activity android:name=".ui.PhoneLogin.VerifyActivity"/>
         <activity android:name=".ui.PhoneLogin.PhoneLoginActivity"/>
         <activity android:name=".ui.postDetails.PostDetailsActivity"></activity>

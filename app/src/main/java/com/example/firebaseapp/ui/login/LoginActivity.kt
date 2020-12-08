@@ -8,6 +8,7 @@ import android.content.pm.Signature
 import android.os.Bundle
 import android.util.Base64
 import android.util.Log
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.firebaseapp.R
@@ -22,6 +23,7 @@ import com.facebook.FacebookException
 import com.facebook.login.LoginResult
 import com.google.firebase.auth.FacebookAuthProvider
 import com.google.firebase.auth.FirebaseAuth
+import kotlinx.android.synthetic.main.activity_email.*
 import kotlinx.android.synthetic.main.activity_login.*
 import java.security.MessageDigest
 import java.security.NoSuchAlgorithmException
@@ -56,6 +58,10 @@ class LoginActivity : AppCompatActivity() {
             router.startPhoneLogin(this)
 
         }
+        signinbutton.setOnClickListener {
+            router.startLoginScreen2(this)
+        }
+
 
         login_button.setReadPermissions("email")
         login_button.setOnClickListener {
@@ -65,6 +71,10 @@ class LoginActivity : AppCompatActivity() {
         }
         printKeyHash()
         initialize()
+
+
+
+
 
     }
 
@@ -140,8 +150,13 @@ class LoginActivity : AppCompatActivity() {
 
             if(resultCode == Activity.RESULT_OK) {
                 router.startHomeScreen(this)
-            } else {
-                showToast("Signed in failed")
+
+            }
+
+
+
+            else {
+                showToast("SignInFailed")
             }
         }
     }

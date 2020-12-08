@@ -4,6 +4,7 @@ package com.example.firebaseapp
 
 import android.app.Activity
 import com.example.firebaseapp.model.Post
+import com.example.firebaseapp.ui.EmailLogin.EmailActivity
 import com.example.firebaseapp.ui.addPost.AddPostActivity
 
 import com.example.firebaseapp.ui.home.HomeActivity
@@ -34,6 +35,20 @@ class Router {
         activity.startActivity(intent)
 
     }
+
+    fun startLoginScreen2(activity: Activity) {
+        val intent = EmailActivity.createIntent(activity)
+        activity.startActivity(intent)
+    }
+
+
+
+    fun startsignupScreen2(activity: Activity) {
+        val intent = EmailActivity.createIntent(activity)
+        activity.startActivity(intent)
+    }
+
+
 
     fun startAddPostScreen(activity: Activity) {
         val intent = AddPostActivity.createIntent(activity)
