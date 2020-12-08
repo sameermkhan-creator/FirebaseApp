@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "474525978269",
+    "project_id": "sameerkhan-firebaseapp",
+    "storage_bucket": "sameerkhan-firebaseapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:474525978269:android:094d4f3b0dac3dec0e8e74",
+        "android_client_info": {
+          "package_name": "com.example.firebaseapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "474525978269-b39ab1gprqqi8pa375jm4qjgdl9qp60n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.firebaseapp",
+            "certificate_hash": "3e33d9f286a951464af27cc57dbc6ea65d1f2608"
+          }
+        },
+        {
+          "client_id": "474525978269-bcvrqtttd1lgm6fnc94ds80gk1d3b8ef.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuaO1_yaGDbqvBGA3wQGFkeyiMdIDN-ZQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "474525978269-bcvrqtttd1lgm6fnc94ds80gk1d3b8ef.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
