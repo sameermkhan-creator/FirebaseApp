@@ -19,6 +19,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import kotlinx.android.synthetic.main.activity_email.*
 import kotlinx.android.synthetic.main.activity_login.*
+import kotlinx.android.synthetic.main.activity_phone_login.*
 
 
 class EmailActivity : AppCompatActivity() {
@@ -37,17 +38,23 @@ class EmailActivity : AppCompatActivity() {
         setContentView(R.layout.activity_email)
         auth = FirebaseAuth.getInstance()
 
+        btn_back2.setOnClickListener{
+            startActivity(Intent(applicationContext,LoginActivity::class.java))
+
+        }
+
+
+
+
         btn_sign_up.setOnClickListener {
             startActivity(Intent(this, SignupActivity::class.java))
             finish()
-            Toast.makeText(
-                    baseContext, "Signup Successful",
-                    Toast.LENGTH_SHORT
-            ).show()
+
         }
 
         btn_log_in.setOnClickListener {
             doLogin()
+
 
 
         }

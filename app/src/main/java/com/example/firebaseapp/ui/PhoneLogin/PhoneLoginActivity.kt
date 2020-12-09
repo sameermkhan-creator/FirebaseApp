@@ -83,7 +83,7 @@ class PhoneLoginActivity : AppCompatActivity() {
 
 
         btn_back.setOnClickListener{
-            startActivity(Intent(applicationContext,VerifyActivity::class.java))
+            startActivity(Intent(applicationContext,LoginActivity::class.java))
 
         }
 

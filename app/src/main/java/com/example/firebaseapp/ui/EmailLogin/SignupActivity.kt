@@ -13,6 +13,7 @@ import com.example.firebaseapp.R
 import com.example.firebaseapp.Router
 import com.example.firebaseapp.ui.login.LoginActivity
 import com.google.firebase.auth.FirebaseAuth
+import kotlinx.android.synthetic.main.activity_phone_login.*
 
 import kotlinx.android.synthetic.main.activity_signup.*
 
@@ -28,6 +29,12 @@ class SignupActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signup)
         auth = FirebaseAuth.getInstance()
+
+        btn_back3.setOnClickListener{
+            startActivity(Intent(applicationContext,EmailActivity::class.java))
+
+        }
+
 
         btn_sign_up.setOnClickListener {
             signUpUser()
@@ -63,6 +70,10 @@ class SignupActivity : AppCompatActivity() {
                                     if (task.isSuccessful) {
                                         startActivity(Intent(this, LoginActivity::class.java))
                                         finish()
+                                        Toast.makeText(
+                                                baseContext, "Signup Successful",
+                                                Toast.LENGTH_SHORT
+                                        ).show()
                                     }
                                 }
                     } else {

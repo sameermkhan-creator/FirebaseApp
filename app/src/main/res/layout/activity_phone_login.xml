@@ -12,7 +12,7 @@
         android:layout_height="59dp"
         android:layout_marginStart="28dp"
         android:layout_marginTop="84dp"
-        android:text="Back"
+        android:text="@string/back_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText"
@@ -23,20 +23,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/enter_your_phone_number"
-        android:textColor="#F307DB"
+        android:textColor="#000000"
         android:textSize="24sp"
-        android:textStyle="bold|italic"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.426" />
+        app:layout_constraintVertical_bias="0.427" />
 
     <EditText
         android:id="@+id/editText"
         android:layout_width="73dp"
-        android:layout_height="46dp"
+        android:layout_height="48dp"
         android:layout_marginTop="80dp"
         android:background="@drawable/edittext_bg"
         android:enabled="false"
@@ -46,7 +46,7 @@
         android:textColor="#1F1F1F"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.211"
+        app:layout_constraintHorizontal_bias="0.133"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="0.018" />
@@ -58,17 +58,16 @@
         android:layout_marginStart="12dp"
         android:layout_marginTop="84dp"
         android:background="@drawable/edittext_bg"
+        android:hint="6505554567"
         android:inputType="phone"
         android:paddingLeft="10dp"
         android:textColor="#1F1F1F"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.285"
         app:layout_constraintStart_toEndOf="@+id/editText"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.0"
-        android:hint="6505554567"
-        />
+        app:layout_constraintVertical_bias="0.003" />
 
     <Button
         android:id="@+id/btn_phone_login"

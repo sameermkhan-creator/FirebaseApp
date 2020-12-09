@@ -15,6 +15,7 @@
         app:title="@string/feed"
         app:titleTextColor="@android:color/white" />
 
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/postsFeed"
         android:layout_width="0dp"
@@ -23,21 +24,23 @@
         android:paddingEnd="@dimen/small_margin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/homeToolbar"
         app:layout_constraintVertical_bias="0.0" />
-
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/addPostFab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="96dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="100dp"
         android:src="@drawable/ic_add"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.921"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adView" />
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
@@ -51,10 +54,10 @@
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.174"
+        app:layout_constraintHorizontal_bias="0.648"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/homeToolbar"
-        app:layout_constraintVertical_bias="0.975"></com.google.android.gms.ads.AdView
+        app:layout_constraintVertical_bias="0.694"></com.google.android.gms.ads.AdView
 
 
         >
@@ -66,12 +69,13 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_marginTop="112dp"
-        android:layout_marginEnd="32dp"
         android:src="@drawable/ic_baseline_camera_roll_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.921"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/adView"
-        app:layout_constraintVertical_bias="0.222"
+        app:layout_constraintVertical_bias="0.09"
         app:rippleColor="#F44336"></com.google.android.material.floatingactionbutton.FloatingActionButton>
 
 

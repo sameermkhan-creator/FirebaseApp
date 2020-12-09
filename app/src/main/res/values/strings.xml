@@ -25,7 +25,8 @@
     <string name="dont_have_account">Sign Up Here</string>
     <string name="email">noemail@email.ca</string>
     <string name="sign_up">Sign Up</string>
-    <string name="sign_in">Sign In</string>
+    <string name="sign_in">Sign In/Sign Up</string>
     <string name="image_chooser_title">Complete action using</string>
+    <string name="back_button">Back</string>
 
 </resources>
