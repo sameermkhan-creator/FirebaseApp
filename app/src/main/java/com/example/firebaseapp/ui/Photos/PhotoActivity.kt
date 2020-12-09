@@ -14,6 +14,7 @@ import com.example.firebaseapp.firebase.authentication.AuthenticationManager
 
 import com.example.firebaseapp.utils.ImageLoader
 import android.content.Context
+import android.widget.Toast
 import com.example.firebaseapp.firebase.cloud.CloudStorageManager
 
 
@@ -69,14 +70,14 @@ class PhotoActivity : AppCompatActivity() {
         if (requestCode == CHOOSE_IMAGE_REQUEST_CODE && resultCode == Activity.RESULT_OK) {
             val selectedImageUri = data?.data ?: return
             cloudStorageManager.uploadPhoto(selectedImageUri, ::onPhotoUploadSuccess)
-
+         deletePic.setOnClickListener {
+             cloudStorageManager.deletePhoto(selectedImageUri)
+             Toast.makeText(applicationContext,"Succesfully Deleted image",Toast.LENGTH_LONG).show()
+             imageLoader.deleteImage(this,imageView)
+         }
 
         }
     }
-
-
-
-
 
 
 
@@ -90,7 +91,19 @@ class PhotoActivity : AppCompatActivity() {
 
     private fun onPhotoUploadSuccess(url: String) {
         imageLoader.loadImage(this, url, imageView)
+
+        Toast.makeText(this,"Succesfully Uploaded",Toast.LENGTH_LONG).show()
     }
+
+
+/*
+    private fun onPhotoDeleteSuccess(uri: String) {
+        imageLoader.deleteImage(this,uri,imageView)
+        Toast.makeText(applicationContext,"Succesfully Deleted image",Toast.LENGTH_LONG).show()
+
+
+    }
+*/
 
 
 

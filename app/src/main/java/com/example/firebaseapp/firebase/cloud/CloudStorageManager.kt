@@ -39,6 +39,35 @@ class CloudStorageManager {
                         onSuccessAction(downloadUri.toString())
                     }
                 }
+
+
+
+
+
+
         }
     }
+
+    fun deletePhoto(selectedImageUri: Uri) {
+
+        val photosReference = firebaseStorage.getReference(PHOTOS_REFERENCE)
+
+        selectedImageUri.lastPathSegment?.let { segment ->
+
+            val photoReference = photosReference.child(segment)
+
+
+            photoReference.delete().addOnCompleteListener {
+
+
+            }
+
+
+
+        }
+
+
+    }
+
+
 }

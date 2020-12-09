@@ -28,16 +28,16 @@
         app:layout_constraintTop_toBottomOf="@id/homeToolbar"
         app:layout_constraintVertical_bias="0.0" />
 
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/addPostFab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/big_margin"
-        android:layout_marginBottom="@dimen/big_margin"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="96dp"
         android:src="@drawable/ic_add"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
-
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
@@ -51,25 +51,28 @@
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.648"
+        app:layout_constraintHorizontal_bias="0.174"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/homeToolbar"
-        app:layout_constraintVertical_bias="0.694"></com.google.android.gms.ads.AdView
+        app:layout_constraintVertical_bias="0.975"></com.google.android.gms.ads.AdView
 
 
         >
 
-    <ImageButton
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/searchImageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="141dp"
+        android:layout_marginTop="112dp"
         android:layout_marginEnd="32dp"
-        android:src="@android:drawable/ic_menu_search"
+        android:src="@drawable/ic_baseline_camera_roll_24"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/adView"></ImageButton>
+        app:layout_constraintTop_toBottomOf="@+id/adView"
+        app:layout_constraintVertical_bias="0.222"
+        app:rippleColor="#F44336"></com.google.android.material.floatingactionbutton.FloatingActionButton>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

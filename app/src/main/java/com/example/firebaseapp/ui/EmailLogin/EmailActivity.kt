@@ -40,10 +40,16 @@ class EmailActivity : AppCompatActivity() {
         btn_sign_up.setOnClickListener {
             startActivity(Intent(this, SignupActivity::class.java))
             finish()
+            Toast.makeText(
+                    baseContext, "Signup Successful",
+                    Toast.LENGTH_SHORT
+            ).show()
         }
 
         btn_log_in.setOnClickListener {
             doLogin()
+
+
         }
 
 
@@ -92,18 +98,23 @@ class EmailActivity : AppCompatActivity() {
             if(currentUser.isEmailVerified) {
                 startActivity(Intent(this, HomeActivity::class.java))
                 finish()
+                Toast.makeText(
+                        baseContext, "Login Successful",
+                        Toast.LENGTH_SHORT
+                ).show()
             }else{
                 Toast.makeText(
                         baseContext, "Please verify your email address.",
                         Toast.LENGTH_SHORT
                 ).show()
             }
-        } else {
+        } /*else {
             Toast.makeText(
-                    baseContext, "Login failed.",
+                    baseContext, "",
                     Toast.LENGTH_SHORT
             ).show()
-        }
+
+        }*/
     }
 
 
