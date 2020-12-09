@@ -51,12 +51,25 @@
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.648"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/homeToolbar"></com.google.android.gms.ads.AdView
+        app:layout_constraintTop_toBottomOf="@+id/homeToolbar"
+        app:layout_constraintVertical_bias="0.694"></com.google.android.gms.ads.AdView
 
 
         >
+
+    <ImageButton
+        android:id="@+id/searchImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="141dp"
+        android:layout_marginEnd="32dp"
+        android:src="@android:drawable/ic_menu_search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adView"></ImageButton>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

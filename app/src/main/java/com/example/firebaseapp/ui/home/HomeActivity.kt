@@ -15,6 +15,7 @@ import com.example.firebaseapp.Router
 import com.example.firebaseapp.firebase.authentication.AuthenticationManager
 import com.example.firebaseapp.firebase.realTimeDatabase.RealtimeDatabaseManager
 import com.example.firebaseapp.model.Post
+import com.example.firebaseapp.ui.Photos.PhotoActivity
 import com.example.firebaseapp.ui.login.LoginActivity
 import com.example.firebaseapp.utils.DateUtils
 import com.google.android.gms.ads.AdRequest
@@ -46,6 +47,11 @@ class HomeActivity : AppCompatActivity() {
 
 
         initialize()
+
+        searchImageButton.setOnClickListener{
+            router.startUploadPhotoActivity(this)
+        }
+
     }
 
     override fun onStart() {

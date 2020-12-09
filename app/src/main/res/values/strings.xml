@@ -26,4 +26,6 @@
     <string name="email">noemail@email.ca</string>
     <string name="sign_up">Sign Up</string>
     <string name="sign_in">Sign In</string>
+    <string name="image_chooser_title">Complete action using</string>
+
 </resources>

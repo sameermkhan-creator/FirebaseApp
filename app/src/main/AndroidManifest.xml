@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-
-
     package="com.example.firebaseapp">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-
-
-
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -18,51 +13,49 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FirebaseApp">
 
-
         <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-1911400553432297~4415979898"/>
+            android:value="ca-app-pub-1911400553432297~4415979898" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"
+            tools:replace="android:value" />
 
-
-
-
-
-        <meta-data android:name="com.facebook.sdk.ApplicationId"
-            tools:replace="android:value"
-
-            android:value="@string/facebook_app_id"/>
-
-        <activity android:name="com.facebook.FacebookActivity"
-            android:configChanges=
-                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:label="@string/app_name" />
         <activity
             android:name="com.facebook.CustomTabActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
+
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.EmailLogin.SignupActivity"/>
-        <activity android:name=".ui.EmailLogin.EmailActivity"/>
-        <activity android:name=".ui.PhoneLogin.VerifyActivity"/>
-        <activity android:name=".ui.PhoneLogin.PhoneLoginActivity"/>
-        <activity android:name=".ui.postDetails.PostDetailsActivity"></activity>
-        <activity android:name=".ui.addPost.AddPostActivity" />
-        <activity android:name=".ui.login.LoginActivity"
-            android:noHistory="true">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+        <activity android:name=".ui.EmailLogin.SignupActivity" />
+        <activity android:name=".ui.EmailLogin.EmailActivity" />
+        <activity android:name=".ui.PhoneLogin.VerifyActivity" />
+        <activity android:name=".ui.PhoneLogin.PhoneLoginActivity" />
+        <activity android:name=".ui.postDetails.PostDetailsActivity" />
+        <activity android:name=".ui.addPost.AddPostActivity" />
+        <activity android:name=".ui.Photos.PhotoActivity" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-        <activity android:name=".ui.home.HomeActivity">
-        </activity>
+        <activity android:name=".ui.home.HomeActivity"></activity>
     </application>
 
 </manifest>
