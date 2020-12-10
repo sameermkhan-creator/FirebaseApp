@@ -88,6 +88,12 @@ class EmailActivity : AppCompatActivity() {
                         updateUI(user)
                     } else {
 
+                        Toast.makeText(
+                            baseContext, "Did not find account with these credentials",
+                            Toast.LENGTH_SHORT
+                        ).show()
+
+
                         updateUI(null)
                     }
                 }

@@ -34,6 +34,21 @@
             android:textColor="@android:color/darker_gray"
             tools:text="2009-12-31" />
 
+        <ImageButton
+            android:layout_width="34dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dislike_button" />
+
+        <TextView
+            android:id="@+id/likes_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="likes"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+
+
+
     </LinearLayout>
 
     <TextView
@@ -44,5 +59,6 @@
         android:layout_marginBottom="@dimen/smallest_margin"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         tools:text="Content" />
+
 
 </LinearLayout>
